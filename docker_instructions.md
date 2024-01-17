@@ -5,7 +5,7 @@ To run the assignment notebooks for this course, we have prepared a docker image
 To get started, first clone this repository into your local machine.
 
 ```
-git clone https://github.com/schelterlabs/big-data-course-2022-assignments.git
+git clone https://github.com/hazourahh/big-data-course-2024-assignments.git
 ```
 
 If you're new to git, learn how to set up git [here](https://docs.github.com/en/get-started/quickstart/set-up-git).
