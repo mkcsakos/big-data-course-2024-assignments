@@ -36,7 +36,7 @@ docker pull mtasnim/jupyter-pyspark-duckdb
 Make sure your working directory (pwd) is set to a directory containing the assignment notebooks from this repository.
 
 ```
-cd big-data-course-2022-assignments
+cd big-data-course-2024-assignments
 ```
 
 **Step 3:**  Run the image
