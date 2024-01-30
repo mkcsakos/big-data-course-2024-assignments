@@ -10,6 +10,11 @@
  ```
  docker run -p 8888:8888 -v "c:\users\jo\my documents\big data":/home/jovyan/work  -e JUPYTER_ENABLE_LAB=yes mtasnim/jupyter-pyspark-duckdb
  ```
+  * In Windows (powershell) you should use ${pwd} instead of $(pwd):
+  ```
+ docker run -p 8888:8888 -v ${pwd}:/home/jovyan/work  -e JUPYTER_ENABLE_LAB=yes mtasnim/jupyter-pyspark-duckdb
+ ```
+
  
  * ### Problem: Warning that Docker cannot be used unless Virtualization is enabled in the bios. 
    * __Seen on__: Windows  
