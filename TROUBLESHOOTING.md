@@ -10,7 +10,7 @@
  ```
  docker run -p 8888:8888 -v "c:\users\jo\my documents\big data":/home/jovyan/work  -e JUPYTER_ENABLE_LAB=yes mtasnim/jupyter-pyspark-duckdb
  ```
-  * In Windows (powershell) you should use ${pwd} instead of $(pwd):
+  * In Windows (powershell) you should use curly bracets `${pwd}` instead of parantheses `$(pwd)`:
   ```
  docker run -p 8888:8888 -v ${pwd}:/home/jovyan/work  -e JUPYTER_ENABLE_LAB=yes mtasnim/jupyter-pyspark-duckdb
  ```
