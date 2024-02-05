@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  bigdata_project:
+    # build: .
+    image: mtasnim/jupyter-pyspark-duckdb
+    platform: linux/arm64
+
+    # stdin_open: true # docker run -i
+    # tty: true # docker run -t
+    ports:
+      - 8888:8888
+      
+    volumes:
+      - ./:/home/jovyan/work
+
+    networks:
+      bigdata_network:
+        ipv4_address: 172.13.5.3
+
+
+
+networks:
+  bigdata_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.13.5.0/24
